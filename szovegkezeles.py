@@ -28,3 +28,20 @@ szoveg = "ez egy teszt szöveg"
 
 
 szovegkezeles()
+def szoveg_visszafele(szoveg):
+    print (f"a(z)'{szoveg}' visszafelé", end=": ")
+    print(szoveg[::-1])
+
+def a_betuk_szama(szoveg):
+    print(f"Hányszor szerepel az A betű az alábbi szövegben:'{szoveg}'", end=": ")
+    print(szoveg.count("a"))
+    i:int = 0
+    a_szam:int = 0
+    while i!<len(szoveg):
+        if szoveg[i] == 'a':
+            a_szam += 1
+        i+=1
+    print('A betuk szama', a_szam)
+
+szoveg_visszafele("Ez egy teszt szöveg")
+a_betuk_szama("The quick brown fox jumps over the lazy dog")
