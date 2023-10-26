@@ -37,7 +37,7 @@ def a_betuk_szama(szoveg):
     print(szoveg.count("a"))
     i:int = 0
     a_szam:int = 0
-    while i!<len(szoveg):
+    while i < len(szoveg):
         if szoveg[i] == 'a':
             a_szam += 1
         i+=1
